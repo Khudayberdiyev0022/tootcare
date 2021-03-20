@@ -1,0 +1,83 @@
+.main {
+    padding: 10px 0px;
+    width: 100%;
+    height: 100%;
+}
+.container {
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+.brandName {
+    width: 30%;
+    height: 100%;
+}
+.brandGroup {
+    text-transform: uppercase;
+}
+.brandGroup>a{
+    color: var(--aqua);
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: underline;
+}
+
+.brandGroup>p{
+    color: #aaa;
+    font-size: 12px;
+    font-weight: 500;
+    margin: 0;
+}
+.contactInform {
+    width: 65%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.box {
+    width: 80%;
+    padding-left: 10px;
+}
+.box>h5 {
+    color: var(--aqua);
+    font-size: 14px;
+}
+.box p{
+    color: #aaa;
+    font-size: 14px;
+    font-weight: 500;
+    margin: 0;
+}
+.icon {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.icon svg {
+    font-size: 35px;
+    fill: var(--aqua);
+}
+
+@media screen and (max-width: 1000px) {
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+    .brandName {
+        width: 30%;
+    }
+    .contactInform {
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+    .main {
+        display: none;
+    }
+}
