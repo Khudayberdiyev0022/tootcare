@@ -1,0 +1,113 @@
+.main {
+   width: 100%;
+   height: 100%;
+   box-sizing: border-box;
+   /* padding: 100px 0px; */
+ }
+
+ .container {
+   width: 90%;
+   height: 100%;
+   display: flex;
+   margin: auto;
+   justify-content: center;
+   /* padding: 0px 30px; */
+ }
+
+ .leftBlock {
+   background: url(../../../assets/img/about.jpg) no-repeat center;
+   width: 50%;
+   height: 80vh;
+   background-size: cover;
+   padding: 0px 50px;
+ }
+ .rightBlock {
+   width: 50%;
+   height: 80vh;
+   padding: 0px 50px;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+ }
+
+ .rightBlock .aquaText {
+  font-size: 14px;
+  display: block;
+  margin-bottom: 5px;
+  color: #00bcd4;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+ }
+
+ .rightBlock h3 {
+  font-size: 38px;
+  font-weight: 500;
+  line-height: 1.4;
+ }
+
+ .rightBlock p {
+  font-family: "Roboto", Arial, sans-serif;
+  /* background: #f8f8f8; */
+  font-size: 16px;
+  line-height: 1.8;
+  font-weight: 400;
+  color: #999999;
+ }
+ 
+ .countBlock {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+ }
+
+ .countBox {
+   width: 30%;
+   border: 1px solid var(--aqua);
+   /* display: flex; */
+   padding: 5px;
+   border-radius: 5px;
+ }
+ .countBox p {
+   font-size: 13px; 
+   text-align: center;
+    padding-top: 10px;
+ }
+
+ .countGroup {
+   display: flex;
+   justify-content: space-evenly;
+   align-items: center;
+ }
+
+ .countGroup p {
+  font-size: 24px;
+  font-weight: 500;
+  color: var(--aqua);
+  line-height: 1; 
+ }
+
+ @media screen and (max-width: 1100px) {
+   .container {
+     flex-direction: column;
+   }
+   .leftBlock {
+     width: 100%;
+   }
+   .rightBlock {
+     width: 100%;
+     height: 100%;
+     padding: 50px 0px;
+   }
+ }
+
+ @media screen and (max-width: 700px) {
+   .countBlock {
+     flex-direction: column;
+   }
+   .countBox {
+     width: 100%;
+     margin: 20px 0px;
+   }
+ }

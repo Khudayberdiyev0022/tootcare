@@ -1,0 +1,183 @@
+.main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  background-color: #f8f8f8;
+}
+.container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  margin: auto;
+}
+.learnText {
+  padding-top: 3rem;
+}
+.leftBlock {
+  width: 50%;
+  height: 100%;
+  background-color: var(--aqua);
+  display: flex;
+  justify-content: flex-end;
+}
+.rightBlock {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-start;
+}
+.leftBox {
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+  text-transform: uppercase;
+  color: #fff;
+}
+.rightBox {
+  width: 80%;
+  height: 100%;
+  padding: 2rem;
+}
+.leftBox p {
+  font-weight: 500;
+  font-size: 13px;
+}
+.leftBox h3 {
+  font-weight: 600;
+  font-size: 30px;
+  padding-bottom: 3rem;
+}
+.form {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+}
+.inputLabel {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  padding: 10px 0;
+}
+.inputLabel input {
+  width: 90%;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 14px;
+}
+.inputLabel select,
+option {
+  width: 90%;
+  height: 50px;
+  background-color: var(--aqua);
+  border: none;
+  border-bottom: 1px solid #fff;
+  font-size: 14px;
+  color: #fff;
+  cursor: pointer;
+  outline: none;
+}
+.inputLabel label {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+.inputLabel textarea {
+  width: 95%;
+  background-color: transparent;
+  border: 1px solid #fff;
+  outline: none;
+  color: #fff;
+  padding: 1rem;
+}
+textarea::placeholder {
+  color: #fff;
+}
+.inputLabel button {
+  width: 95%;
+  height: 50px;
+  border-radius: 4px;
+  background-color: #fff;
+  outline: transparent;
+  cursor: pointer;
+  font-weight: 600;
+  text-transform: uppercase;
+  border: #fff;
+  color: var(--aqua);
+}
+.inputLabel input::placeholder {
+  color: rgb(228, 228, 228);
+  font-size: 14px;
+}
+
+.inputLabel input:focus {
+  color: aqua;
+  background-color: transparent;
+  outline: none;
+  border: none;
+}
+.cardsGroup {
+  width: 100%;
+}
+.cardBlock {
+  width: 100%;
+  display: flex;
+  margin: 20px 0px;
+  background-color: #fff;
+  cursor: pointer;
+  padding: 30px;
+}
+.cardBlock:hover {
+  background-color: var(--aqua);
+  color: #fff;
+}
+.cardIcon {
+  width: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cardIcon img {
+  width: 80%;
+}
+.cardBlock:hover img{
+  width: 80%;
+  background: #fff;
+}
+.cardText {
+  width: 70%;
+  padding-left: 10px;
+}
+@media screen and (max-width: 1300px) {
+  .leftBox {
+    width: 100%;
+  }
+  .rightBox {
+    width: 100%;
+  }
+  .learnText {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 1000px) {
+  .container {
+    flex-direction: column-reverse;
+  }
+  .rightBlock {
+    width: 100%;
+  }
+  .leftBlock {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .cardBlock {
+    padding: 5px;
+  }
+  .form {
+    flex-direction: column;
+  }
+}

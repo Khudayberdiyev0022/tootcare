@@ -1,0 +1,138 @@
+.main {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+  padding: 100px 0px;
+  background: #f8f8f8;
+}
+
+.textTop {
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  margin-bottom: 200px;
+}
+
+.textTop p {
+  font-size: 14px;
+  /* display: block; */
+  margin-bottom: 5px;
+  color: var(--aqua);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.textTop h3 {
+  font-size: 40px;
+  font-weight: 500;
+  margin-bottom: 50px;
+}
+
+.cardAll {
+  width: 90%;
+  /* border: 1px solid red; */
+  margin: auto;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.cardBox {
+  background: #fff;
+  width: 23%;
+  padding: 40px;
+  position: relative;
+
+  /* border: 1px solid yellow; */
+}
+
+/* .cardImg {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid red; */
+/* width: 200px;
+    height: 200px;
+    margin: auto;
+    border-radius: 50% 0% 50% 50%; */
+/* margin-top: -100px; */
+/* border: 10px solid #f8f9fa;
+    z-index: 0; */
+/* padding: 10px; */
+/* }  */
+
+.cardImg img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border: 1px solid red; */
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  border-radius: 50% 0% 50% 50%;
+  border: 10px solid #f8f9fa;
+  z-index: 0;
+  position: absolute;
+  top: -100px;
+  left: 20%;
+  /* padding: 10px; */
+}
+
+.iconsGroup {
+  width: 80%;
+  display: flex;
+  justify-content: space-evenly;
+  margin: auto;
+  /* border: 1px solid green; */
+  padding-bottom: 10px;
+}
+
+.icon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  /* border: 1px solid blue; */
+  border-radius: 50%;
+  background: var(--aqua);
+}
+.icon svg {
+  color: #fff;
+  width: 25px;
+  height: 25px;
+}
+
+.cardBody {
+  /* background-color: #fff; */
+  width: 100%;
+  text-align: center;
+  z-index: -1;
+  border-radius: 4px;
+  margin-top: 100px;
+  /* margin-top: 100px; */
+}
+.cardBox:hover {
+  background: var(--aqua);
+  color: #fff;
+}
+.dr {
+  font-size: 20px;
+  font-weight: 500;
+  padding-top: 1rem;
+}
+
+.aquaDr {
+  color: var(--aqua);
+  display: block;
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 14px;
+}
+
+.lorem {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  opacity: 0.7;
+}
